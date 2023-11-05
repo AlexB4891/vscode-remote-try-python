@@ -30,6 +30,19 @@
 			"onAutoForward": "notify"
 		}
 	},
+ 	// Add the IDs of extensions you want installed when the container is created.
+ 	"customizations": {
+     	"vscode": {
+        	 "extensions": [
+             	"GitHub.copilot"
+         	]
+     	},
+     	"codespaces": {
+         	"openFiles": [
+             	"codespace.md"
+         	]
+     	}
+ 	},
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "pip3 install -r requirements.txt"
